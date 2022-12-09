@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-first">
+
+    <!-- header -->
+    <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
+        <!-- Logo and contacts  -->
+        <div class="mb-6 flex items-center justify-between">
+            <!-- Left side -->
+            <img class="px-6 py-2 border-8 border-[#FF9B00] max-w-[70%] max-h-[70%]" src="/img/logo/logo_rus.svg" alt="logo_rus">
+            <!-- Right side -->
+            <!-- DESCKTOP -->
+            <div class="hidden lg:inline-flex items-center">
+                <!-- Contacts -->
+                <div class="flex flex-col justify-between pr-9">
+                    <div class="inline-flex items-center justify-between">
+                        <span class="text-sm pr-9">E-mail:</span>
+                        <a href="mailto:asv@garant-tehnika.ru" class="text-sm font-semibold">asv@garant-tehnika.ru</a>
+                    </div>
+                    <div class="inline-flex items-center justify-between">
+                        <span class="text-sm pr-9">Телефон:</span>
+                        <a href="tel:+74959899570" class="text-sm font-semibold">8 (495) 989-95-70</a>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
+            </div>
+            <!-- MOBILE -->
+            <div class="block lg:hidden items-center flex-shrink">
+                <svg class="" weight="54px" height="54px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="9" width="42" height="5" fill="#111831"/>
+                    <rect x="6" y="24" width="42" height="5" fill="#111831"/>
+                    <rect x="6" y="39" width="42" height="5" fill="#111831"/>
+                    </svg>                    
+            </div>
+        </div>
+        <!-- Навигационная панель -->
+        <nav class="hidden lg:block">
+            <ul class="nav">
+                <li><a href="#">Каталог спецтехники</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Наши отгрузки</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
+        <!-- section gallery -->
+        <section>
+            <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
+            <div class="gallery">
+                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_left.svg"></button>
+                <div class="gallery__panel">
+                    <button class="gallery__panel_button bg-[#FF9B00] hover:bg-orange-400"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                    <button class="gallery__panel_button"></button>
+                </div>
+                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_right.svg"></button>
+            </div>
+        </section>
+        <!-- section catalog -->
+        <section class="relative mt-28 mx-auto">
+            <h2 class="section-title">Каталог Спецтехники</h2>
+            <div class="grid grid-cols-4 gap-5 mt-20 mx-auto">
+                <div class="card">
+                    <h3 class="card__title">Фургоны в наличии</h3>
+                    <img src="/img/card/card1.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Вахтовые автобусы</h3>
+                    <img src="/img/card/card2.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div >
+                <div class="card">
+                    <h3 class="card__title">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card"> 
+                    <h3 class="card__title">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>  
+                <div class="card"> 
+                    <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <a href="#" class="card__link">
+                        <span class="card__link_text">Перейти</span>
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- section news -->
+        <section class="mt-36">
+            <h2 class="section-title">Новости</h2>
+            <div class="grid grid-cols-4 mt-24 gap-y-2 lg:gap-x-20 lg:gap-y-14">
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>АО «КАЗ» представляет новый проект</h3>
+                        <span>22.01.2022</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Высотныйколенчато-телескопический автогидроподъемник</p>
+                        <img src="/img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>Мусоровозный агрегат eCollect</h3>
+                        <span>01.08.2021</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Теперь новаторские разработки британцев перевоплотились в семейство eRCV</p>
+                        <img src="/img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news block-news_overflow">
+                    <div class="block-news__title">
+                        <h3>Кузовостроители обращают взор на азиатские машины</h3>
+                        <span>08.12.2022</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Заводы-«бодибилдеры» всё активнее используют шасси  европейских производителей</p>
+                        <img src="/img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news block-news_overflow">
+                    <div class="block-news__title">
+                        <h3>GarantAuto сделали лучший сайт в отрасли</h3>
+                        <span>01.04.2021</span>
+                    </div>
+                    <a href="#" class="block-news__link ">
+                        <p>Кто бы сомневался ведь его Кирилл верстал</p>
+                        <img src="/img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-end mt-28">
+                <a href="#" class="block-news__link justify-end">
+                    <span class="text-3xl font-bold text-[#00437B] self-center">Перейти к новостям</span>
+                    <img class="w-[80px] h-[80px]" src="/img/icon/icon_arrow_45.svg">
+                </a>
+            </div>
+        </section>
+
+        <!-- section partners -->
+        <section class="mt-36">
+            <h2 class="section-title">Наши партнеры</h2>
+            <div class="flex items-center justify-between mt-24 pb-10">
+                <button><img src="/img/icon/icon_arrow_left.svg"></button>
+                <div class="grid-cols-4 gap-x-8 gap-y-14 lg:grid hidden ">
+                    <div class="flex justify-start items-center"><img class="" src="img/partners/BALT.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/VTB.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/RESO.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/CAR.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="img/partners/SBER.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/EVRO.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/SOV.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/GAZ.png"></div>
+                </div>
+                <div class="lg:hidden">
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/VTB.png"></div>
+                </div>
+                <button><img src="/img/icon/icon_arrow_right.svg"></button>
+            </div>
+        </section>
+        <!-- our shipments -->
+        <section class="mt-36">
+            <h2 class="section-title">Наши отгрузки</h2>
+            <div class="shipments">
+                <div class="shipments__block">
+                    <h3 class="row-span-2 font-overpass font-bold text-xl lg:text-3xl pb-16 box-border">Тяжелый самосвал КамАЗ 6522 передан клиенту для работы с инертными материалами</h3>
+                    <div class="flex flex-col justify-between gap-4">
+                        <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Нижневартовск</span>
+                        <img class="row-span-2" src="/img/shipment/shipment_first.png">
+                    </div>
+                </div>
+                <div class="shipments__block">
+                    <h3 class="row-span-2 font-overpass font-bold text-xl lg:text-3xl pb-16 box-border">Клиенту из Москвы, передан крупный экскаватор для сноса зданий-Doosan 360 будет работать с гидроножницами (1)</h3>
+                    <div class="flex flex-col justify-between gap-4">
+                        <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Москва</span>
+                        <img class="row-span-2" src="/img/shipment/shipment_second.png">
+                    </div>
+                </div>
+                <a href="#" class="shipments__link">
+                    <h3 class="text-blue-900  font-overpass font-bold text-3xl">Посмотреть все отгрузки</h3>
+                    <div class="h-40 relative">
+                        <svg width="134" height="134" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.953 16.0326L26.375 16.0326L9.1568 33.2508L12.7492 36.8432L29.9674 19.625L29.9674 35.047L35.047 35.047V10.953H10.953L10.953 16.0326Z" fill="#00437B"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="pt-20 pb-5 px-2 mx-auto  bg-[url('/img/background/back_footer.png')] bg-bottom bg-no-repeat lg:block lg:pb-0">
+        <section class="pt-24 mt-40 mx-auto border-t-[10px] border-[#FF9B00] flex flex-col lg:gap-x-32 pb-1 max-w-lg lg:max-w-6xl lg:flex-row lg:justify-between lg:pb-14">
+            <!-- left side -->
+            <div class="flex flex-col gap-y-16 ">
+                <img src="/img/logo/logo_footer.svg">
+                <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
+                <div class="flex flex-col gap-4 lg:gap-7">
+                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a>
+                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="flex flex-col gap-y-11">
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
+                <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-4 mt-4 lg:gap-7 lg:mt-0">
+                    <li><a href="">Каталог спецтехники</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Наши отгрузки</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Новости</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
