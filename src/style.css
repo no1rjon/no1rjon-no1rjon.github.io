@@ -246,4 +246,18 @@ button{
     }    
 } 
 
+.nav-modal {
+    @apply hidden fixed z-[1] left-0 top-0 w-[100%] h-[100%] overflow-auto bg-white
+}
 
+.nav-modal__window {
+    @apply mt-8 mx-auto p-[20px] max-w-lg flex flex-col align-middle
+}
+
+.nav-modal__window svg {
+    @apply mb-12 justify-self-end cursor-pointer block 
+}
+
+.nav-modal__window ul{
+    @apply flex flex-col gap-y-9 font-overpass text-xl font-extrabold text-end mb-32
+}

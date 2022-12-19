@@ -20,7 +20,7 @@
         <!-- Logo and contacts  -->
         <div class="mb-6 flex items-center justify-between">
             <!-- Left side -->
-            <img class="px-6 py-2 border-8 border-[#FF9B00] max-w-[70%] max-h-[70%]" src="img/logo/logo_rus.svg" alt="logo_rus">
+            <img class="px-6 py-2 border-8 border-[#FF9B00] max-w-[70%] max-h-[70%]" src="/img/logo/logo_rus.svg" alt="logo_rus">
             <!-- Right side -->
             <!-- DESCKTOP -->
             <div class="hidden lg:inline-flex items-center">
@@ -40,14 +40,16 @@
             </div>
             <!-- MOBILE -->
             <div class="block lg:hidden items-center flex-shrink">
-                <svg class="" weight="54px" height="54px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="9" width="42" height="5" fill="#111831"/>
-                    <rect x="6" y="24" width="42" height="5" fill="#111831"/>
-                    <rect x="6" y="39" width="42" height="5" fill="#111831"/>
-                    </svg>                    
+                <button id="open-modal">
+                    <svg class="" weight="54px" height="54px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="9" width="42" height="5" fill="#111831"/>
+                        <rect x="6" y="24" width="42" height="5" fill="#111831"/>
+                        <rect x="6" y="39" width="42" height="5" fill="#111831"/>
+                    </svg> 
+                </button>                  
             </div>
         </div>
-        <!-- Навигационная панель -->
+        <!-- Navigation panel -->
         <nav class="hidden lg:block">
             <ul class="nav">
                 <li><a href="#">Каталог спецтехники</a></li>
@@ -57,15 +59,34 @@
                 <li><a href="#">Новости</a></li>
             </ul>
         </nav>
+        <!-- modal navigation -->
+        <nav class="nav-modal" id="nav-modal">
+            <div class="nav-modal__window">
+                <div class="flex justify-end">
+                    <svg id="close" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="21.2132" width="30" height="5" transform="rotate(-45 2 21.2132)" fill="#111831"/>
+                        <rect width="30" height="5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 2.37427 3.53553)" fill="#111831"/>
+                    </svg>
+                </div>                        
+                <ul>
+                    <a><li>Каталог спецтехники </li></a>
+                    <a><li>Услуги</li></a>
+                    <a><li>Наши отгрузки</li></a>
+                    <a><li>Контакты</li></a>
+                    <a><li>Новости</li></a>
+                </ul>
+                <button class="font-bold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-7 button-animation">Обратная связь</button>
+            </div>
+        </nav>
     </header>
 
     <!-- main -->
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
-            <img class="p-0 border-[10px] border-[#FF9B00]" src="img/card/main_card.png">
+            <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
             <div class="gallery">
-                <button class="gallery__swiper"><img src="img/icon/icon_arrow_left.svg"></button>
+                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_left.svg"></button>
                 <div class="gallery__panel">
                     <button class="gallery__panel_button bg-[#FF9B00] hover:bg-orange-400"></button>
                     <button class="gallery__panel_button"></button>
@@ -78,7 +99,7 @@
                     <button class="gallery__panel_button"></button>
                     <button class="gallery__panel_button"></button>
                 </div>
-                <button class="gallery__swiper"><img src="img/icon/icon_arrow_right.svg"></button>
+                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_right.svg"></button>
             </div>
         </section>
         <!-- section catalog -->
@@ -87,18 +108,18 @@
             <div class="grid grid-cols-4 gap-5 mt-20 mx-auto">
                 <div class="card">
                     <h3 class="card__title">Фургоны в наличии</h3>
-                    <img src="img/card/card1.png" alt="">
+                    <img src="/img/card/card1.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
                     <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img src="img/card/card2.png" alt="">
+                    <img src="/img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img src="img/icon/icon_arrow_45.svg">
+                        <img src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -106,7 +127,7 @@
                     <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -114,7 +135,7 @@
                     <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -122,7 +143,7 @@
                     <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div >
                 <div class="card">
@@ -130,7 +151,7 @@
                     <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -138,7 +159,7 @@
                     <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -146,7 +167,7 @@
                     <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card"> 
@@ -154,7 +175,7 @@
                     <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>  
                 <div class="card"> 
@@ -162,7 +183,7 @@
                     <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -170,7 +191,7 @@
                     <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -178,7 +199,7 @@
                     <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -186,7 +207,7 @@
                     <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -194,7 +215,7 @@
                     <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -202,7 +223,7 @@
                     <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
                 <div class="card">
@@ -210,7 +231,7 @@
                     <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
+                        <img class="" src="/img/icon/icon_arrow_45.svg">
                     </a>
                 </div>
             </div>
@@ -226,7 +247,7 @@
                     </div>
                     <a href="#" class="block-news__link">
                         <p>Высотныйколенчато-телескопический автогидроподъемник</p>
-                        <img src="img/icon/arrow45_orange.svg">
+                        <img src="/img/icon/arrow45_orange.svg">
                     </a>
                 </div>
                 <div class="block-news">
@@ -236,7 +257,7 @@
                     </div>
                     <a href="#" class="block-news__link">
                         <p>Теперь новаторские разработки британцев перевоплотились в семейство eRCV</p>
-                        <img src="img/icon/arrow45_orange.svg">
+                        <img src="/img/icon/arrow45_orange.svg">
                     </a>
                 </div>
                 <div class="block-news block-news_overflow">
@@ -246,7 +267,7 @@
                     </div>
                     <a href="#" class="block-news__link">
                         <p>Заводы-«бодибилдеры» всё активнее используют шасси  европейских производителей</p>
-                        <img src="img/icon/arrow45_orange.svg">
+                        <img src="/img/icon/arrow45_orange.svg">
                     </a>
                 </div>
                 <div class="block-news block-news_overflow">
@@ -256,14 +277,14 @@
                     </div>
                     <a href="#" class="block-news__link ">
                         <p>Кто бы сомневался ведь его Кирилл верстал</p>
-                        <img src="img/icon/arrow45_orange.svg">
+                        <img src="/img/icon/arrow45_orange.svg">
                     </a>
                 </div>
             </div>
             <div class="hidden lg:flex justify-end mt-28">
                 <a href="#" class="block-news__link justify-end">
                     <span class="text-3xl font-bold text-[#00437B] self-center">Перейти к новостям</span>
-                    <img class="w-[80px] h-[80px]" src="img/icon/icon_arrow_45.svg">
+                    <img class="w-[80px] h-[80px]" src="/img/icon/icon_arrow_45.svg">
                 </a>
             </div>
         </section>
@@ -272,21 +293,21 @@
         <section class="mt-36">
             <h2 class="section-title">Наши партнеры</h2>
             <div class="flex items-center justify-between mt-24 pb-10">
-                <button><img src="img/icon/icon_arrow_left.svg"></button>
+                <button><img src="/img/icon/icon_arrow_left.svg"></button>
                 <div class="grid-cols-4 gap-x-8 gap-y-14 lg:grid hidden ">
                     <div class="flex justify-start items-center"><img class="" src="img/partners/BALT.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/VTB.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/RESO.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/CAR.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/VTB.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/RESO.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/CAR.png"></div>
                     <div class="flex justify-start items-center"><img class="" src="img/partners/SBER.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/EVRO.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/SOV.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/GAZ.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/EVRO.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/SOV.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/GAZ.png"></div>
                 </div>
                 <div class="lg:hidden">
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/VTB.png"></div>
+                    <div class="flex justify-start items-center"><img class="" src="/img/partners/VTB.png"></div>
                 </div>
-                <button><img src="img/icon/icon_arrow_right.svg"></button>
+                <button><img src="/img/icon/icon_arrow_right.svg"></button>
             </div>
         </section>
         <!-- our shipments -->
@@ -296,15 +317,15 @@
                 <div class="shipments__block">
                     <h3 class="row-span-2 font-overpass font-bold text-xl lg:text-3xl pb-16 box-border">Тяжелый самосвал КамАЗ 6522 передан клиенту для работы с инертными материалами</h3>
                     <div class="flex flex-col justify-between gap-4">
-                        <span class="flex items-center text-xl font-medium"><img src="img/icon/icon_location.svg"> Нижневартовск</span>
-                        <img class="row-span-2" src="img/shipment/shipment_first.png">
+                        <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Нижневартовск</span>
+                        <img class="row-span-2" src="/img/shipment/shipment_first.png">
                     </div>
                 </div>
                 <div class="shipments__block">
                     <h3 class="row-span-2 font-overpass font-bold text-xl lg:text-3xl pb-16 box-border">Клиенту из Москвы, передан крупный экскаватор для сноса зданий-Doosan 360 будет работать с гидроножницами (1)</h3>
                     <div class="flex flex-col justify-between gap-4">
-                        <span class="flex items-center text-xl font-medium"><img src="img/icon/icon_location.svg"> Москва</span>
-                        <img class="row-span-2" src="img/shipment/shipment_second.png">
+                        <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Москва</span>
+                        <img class="row-span-2" src="/img/shipment/shipment_second.png">
                     </div>
                 </div>
                 <a href="#" class="shipments__link">
@@ -320,11 +341,11 @@
     </main>
 
     <!-- footer -->
-    <footer class="pt-20 pb-5 px-2 mx-auto  bg-[url('img/background/back_footer.png')] bg-bottom bg-no-repeat lg:block lg:pb-0">
+    <footer class="pt-20 pb-5 px-2 mx-auto  bg-[url('/img/background/back_footer.png')] bg-bottom bg-no-repeat lg:block lg:pb-0">
         <section class="pt-24 mt-40 mx-auto border-t-[10px] border-[#FF9B00] flex flex-col lg:gap-x-32 pb-1 max-w-lg lg:max-w-6xl lg:flex-row lg:justify-between lg:pb-14">
             <!-- left side -->
             <div class="flex flex-col gap-y-16 ">
-                <img src="img/logo/logo_footer.svg">
+                <img src="/img/logo/logo_footer.svg">
                 <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
                 <div class="flex flex-col gap-4 lg:gap-7">
                     <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a>
@@ -345,5 +366,6 @@
         </section>
     </footer>
 
+    <script src="/js/modal.js"></script>
 </body>
 </html>
