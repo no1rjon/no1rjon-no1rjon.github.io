@@ -1244,19 +1244,19 @@ button{
 }
 
 .bg-first {
-  background-image: url(/img/background/Group.png);
+  background-image: url(img/background/Group.png);
   background-repeat: no-repeat;
 }
 
 .bg-footer {
-  background-image: url(/img/background/back_footer.png);
+  background-image: url(img/background/back_footer.png);
   background-position: 0% 10%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .bg-footer_small {
-  background-image: url(/img/background/back_footer_small.png);
+  background-image: url(img/background/back_footer_small.png);
   background-position: 500px 100px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1330,7 +1330,7 @@ button{
   display: none;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
