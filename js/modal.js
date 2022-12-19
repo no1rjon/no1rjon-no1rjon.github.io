@@ -6,8 +6,6 @@ let btn = document.getElementById("open-modal");
 
 let svg = document.getElementById("close");
 
-let body = document.getElementsByName('body');
-
 btn.onclick = function() {
    modal.style.display = "block";
    document.body.style.overflow = "hidden";
