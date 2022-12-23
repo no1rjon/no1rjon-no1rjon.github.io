@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
-    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="node_modules/swiper/swiper-bundle.css"
+    />
+    <title>Garant Auto</title>
 </head>
 <body class="bg-first">
 
@@ -20,7 +24,11 @@
         <!-- Logo and contacts  -->
         <div class="mb-6 flex items-center justify-between">
             <!-- Left side -->
-            <img class="px-6 py-2 border-8 border-[#FF9B00] max-w-[70%] max-h-[70%]" src="img/logo/logo_rus.svg" alt="logo_rus">
+            <div class="max-w-[65%]">
+                <a href="index.html">
+                    <img class="px-6 py-2 border-8 border-[#FF9B00]" src="img/logo/logo_rus.svg" alt="logo_rus">
+                </a>
+            </div>
             <!-- Right side -->
             <!-- DESCKTOP -->
             <div class="hidden lg:inline-flex items-center">
@@ -52,9 +60,9 @@
         <!-- Navigation panel -->
         <nav class="hidden lg:block">
             <ul class="nav">
-                <li><a href="#">Каталог спецтехники</a></li>
+                <li><a href="product.html">Каталог спецтехники</a></li>
                 <li><a href="#">Услуги</a></li>
-                <li><a href="#">Наши отгрузки</a></li>
+                <li><a href="our_shipments.html">Наши отгрузки</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">Новости</a></li>
             </ul>
@@ -69,9 +77,9 @@
                     </svg>
                 </div>                        
                 <ul>
-                    <a><li>Каталог спецтехники </li></a>
+                    <a href="product.html"><li>Каталог спецтехники </li></a>
                     <a><li>Услуги</li></a>
-                    <a><li>Наши отгрузки</li></a>
+                    <a href="our_shipments.html"><li>Наши отгрузки</li></a>
                     <a><li>Контакты</li></a>
                     <a><li>Новости</li></a>
                 </ul>
@@ -84,23 +92,29 @@
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
-            <img class="p-0 border-[10px] border-[#FF9B00]" src="img/card/main_card.png">
-            <div class="gallery">
-                <button class="gallery__swiper"><img src="img/icon/icon_arrow_left.svg"></button>
-                <div class="gallery__panel">
-                    <button class="gallery__panel_button bg-[#FF9B00] hover:bg-orange-400"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
+            <div class="flex flex-col gap-y-5">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                    </div>
                 </div>
-                <button class="gallery__swiper"><img src="img/icon/icon_arrow_right.svg"></button>
+                <div class="flex justify-between">
+                    <div class="s-button-prev flex justify-start"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_left.svg" alt=""></div>
+                    <div class="justify-self-center self-center"><div class="s-pagination"></div></div>
+                    <div class="s-button-next flex justify-end"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_right.svg" alt=""></div>
+                </div>
             </div>
+
+
         </section>
         <!-- section catalog -->
         <section class="relative mt-28 mx-auto">
@@ -328,7 +342,7 @@
                         <img class="row-span-2" src="img/shipment/shipment_second.png">
                     </div>
                 </div>
-                <a href="#" class="shipments__link">
+                <a href="our_shipments.html" class="shipments__link">
                     <h3 class="text-blue-900  font-overpass font-bold text-3xl">Посмотреть все отгрузки</h3>
                     <div class="h-40 relative">
                         <svg width="134" height="134" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,20 +359,20 @@
         <section class="pt-24 mt-40 mx-auto border-t-[10px] border-[#FF9B00] flex flex-col lg:gap-x-32 pb-1 max-w-lg lg:max-w-6xl lg:flex-row lg:justify-between lg:pb-14">
             <!-- left side -->
             <div class="flex flex-col gap-y-16 ">
-                <img src="img/logo/logo_footer.svg">
+                <a href="index.html"><img src="img/logo/logo_footer.svg"></a>
                 <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
                 <div class="flex flex-col gap-4 lg:gap-7">
-                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a>
-                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+                    <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a></div>
+                    <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a></div>
                 </div>
             </div>
             <!-- right side -->
             <div class="flex flex-col gap-y-11">
                 <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
                 <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-4 mt-4 lg:gap-7 lg:mt-0">
-                    <li><a href="">Каталог спецтехники</a></li>
+                    <li><a href="product.html">Каталог спецтехники</a></li>
                     <li><a href="">Услуги</a></li>
-                    <li><a href="">Наши отгрузки</a></li>
+                    <li><a href="our_shipments.html">Наши отгрузки</a></li>
                     <li><a href="">Контакты</a></li>
                     <li><a href="">Новости</a></li>
                 </ul>
@@ -366,6 +380,9 @@
         </section>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="js/modal.js" type="module"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

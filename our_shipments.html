@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Garant Auto</title>
+</head>
+<body>
+    
+    <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
+        <!-- Logo and contacts  -->
+        <div class="mb-6 flex items-center justify-between">
+            <!-- Left side -->
+            <div class="max-w-[65%]">
+                <a href="index.html">
+                    <img class="px-6 py-2 border-8 border-[#FF9B00]" src="img/logo/logo_rus.svg" alt="logo_rus">
+                </a>
+            </div>
+            <!-- Right side -->
+            <!-- DESCKTOP -->
+            <div class="hidden lg:inline-flex items-center">
+                <!-- Contacts -->
+                <div class="flex flex-col justify-between pr-9">
+                    <div class="inline-flex items-center justify-between">
+                        <span class="text-sm pr-9">E-mail:</span>
+                        <a href="mailto:asv@garant-tehnika.ru" class="text-sm font-semibold">asv@garant-tehnika.ru</a>
+                    </div>
+                    <div class="inline-flex items-center justify-between">
+                        <span class="text-sm pr-9">Телефон:</span>
+                        <a href="tel:+74959899570" class="text-sm font-semibold">8 (495) 989-95-70</a>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
+            </div>
+            <!-- MOBILE -->
+            <div class="block lg:hidden items-center flex-shrink">
+                <button id="open-modal">
+                    <svg class="" weight="54px" height="54px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="9" width="42" height="5" fill="#111831"/>
+                        <rect x="6" y="24" width="42" height="5" fill="#111831"/>
+                        <rect x="6" y="39" width="42" height="5" fill="#111831"/>
+                    </svg> 
+                </button>                  
+            </div>
+        </div>
+        <!-- Navigation panel -->
+        <nav class="hidden lg:block">
+            <ul class="nav">
+                <li><a href="product.html">Каталог спецтехники</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="our_shipments.html">Наши отгрузки</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </nav>
+        <!-- modal navigation -->
+        <nav class="nav-modal" id="nav-modal">
+            <div class="nav-modal__window">
+                <div class="flex justify-end">
+                    <svg id="close" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="21.2132" width="30" height="5" transform="rotate(-45 2 21.2132)" fill="#111831"/>
+                        <rect width="30" height="5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 2.37427 3.53553)" fill="#111831"/>
+                    </svg>
+                </div>                        
+                <ul>
+                    <a href="product.html"><li>Каталог спецтехники </li></a>
+                    <a><li>Услуги</li></a>
+                    <a href="our_shipments.html"><li>Наши отгрузки</li></a>
+                    <a><li>Контакты</li></a>
+                    <a><li>Новости</li></a>
+                </ul>
+                <button class="font-bold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-7 button-animation">Обратная связь</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
+        <section class="">
+            <h2 class="text-4xl lg:text-5xl font-extrabold font-overpass pb-12 pl-0 sm:pl-16 lg:pl-40">Наши отгрузки</h2>
+            <div class="max-w-[1300px] flex flex-wrap justify-center gap-6 lg:gap-x-7 lg:gap-y-11">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png"> 
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png">
+                <img class="max-w-[45%]" src="img/shipment/shipment_first.png"> 
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-20 pb-5 px-2 mx-auto  bg-[url('/img/background/back_footer.png')] bg-bottom bg-no-repeat lg:block lg:pb-0">
+        <section class="pt-24 mt-40 mx-auto border-t-[10px] border-[#FF9B00] flex flex-col lg:gap-x-32 pb-1 max-w-lg lg:max-w-6xl lg:flex-row lg:justify-between lg:pb-14">
+            <!-- left side -->
+            <div class="flex flex-col gap-y-16 ">
+                <a href="index.html"><img src="img/logo/logo_footer.svg"></a>
+                <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
+                <div class="flex flex-col gap-4 lg:gap-7">
+                    <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a></div>
+                    <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a></div>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="flex flex-col gap-y-11">
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
+                <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-4 mt-4 lg:gap-7 lg:mt-0">
+                    <li><a href="product.html">Каталог спецтехники</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="our_shipments.html">Наши отгрузки</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Новости</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/modal.js"></script>
+</body>
+</html>

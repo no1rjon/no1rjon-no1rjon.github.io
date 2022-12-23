@@ -1,20 +1,34 @@
 "use strict";
  
-let modal = document.getElementById("nav-modal");
+const modal = document.getElementById("nav-modal");
 
-let btn = document.getElementById("open-modal");
+const btn = document.getElementById("open-modal");
 
-let svg = document.getElementById("close");
+const svg = document.getElementById("close");
 
-btn.onclick = function() {
-   modal.style.display = "block";
-   document.body.style.overflow = "hidden";
-   document.body.style.position = "fixed";
-}
+const body = document.body;
 
-svg.onclick = function() {
-   modal.style.display = "none";
-   document.body.style.overflow = "auto";
-   document.body.style.position = "static";
-}
+const openModal = () => {
+   modal.classList.add("nav-modal_open");
+   body.classList.add("modal-open");
+};
 
+const closeModal = () => {
+   modal.classList.remove("nav-modal_open");
+   body.classList.remove("modal-open");
+};
+
+
+btn.addEventListener('click', openModal);
+svg.addEventListener('click', closeModal);
+
+
+// function openModal() {
+//    modal.classList.add("nav-modal_open");
+//    body.classList.add("modal-open");
+// };
+
+// function closeModal() {
+//    modal.classList.remove("nav-modal_open");
+//    body.classList.remove("modal-open");
+// };
