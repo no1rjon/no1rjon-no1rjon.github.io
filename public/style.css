@@ -1321,6 +1321,10 @@ select {
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .content-between {
   align-content: space-between;
 }
@@ -1427,8 +1431,8 @@ select {
   border-color: rgb(255 155 0 / var(--tw-border-opacity));
 }
 
-.bg-\[url\(\'\/img\/background\/back_footer\.png\'\)\] {
-  background-image: url('/img/background/back_footer.png');
+.bg-\[url\(\'\.\.\/img\/background\/back_footer\.png\'\)\] {
+  background-image: url('../img/background/back_footer.png');
 }
 
 .bg-bottom {
@@ -1654,22 +1658,8 @@ button{
 }
 
 .bg-first {
-  background-image: url(img/background/Group.png);
   background-repeat: no-repeat;
-}
-
-.bg-footer {
-  background-image: url(img/background/back_footer.png);
-  background-position: 0% 10%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg-footer_small {
-  background-image: url(img/background/back_footer_small.png);
-  background-position: 500px 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url('../img/background/group.png')
 }
 
 .button-animation {
