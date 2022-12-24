@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="public/style.css">
     <link
         rel="stylesheet"
-        href="public/swiper-bundle.min.css"
+        href="public/swiper.min.css"
     />
     <title>Garant Auto</title>
 </head>
@@ -68,8 +68,8 @@
             </ul>
         </nav>
         <!-- modal navigation -->
-        <nav class="nav-modal" id="nav-modal">
-            <div class="nav-modal__window">
+        <nav class="modal-menu" id="modal-menu">
+            <div class="modal-menu__window">
                 <div class="flex justify-end">
                     <svg id="close" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="2" y="21.2132" width="30" height="5" transform="rotate(-45 2 21.2132)" fill="#111831"/>
@@ -92,30 +92,31 @@
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
-            <div class="flex flex-col gap-y-5">
-                <div class="swiper">
+            <div class="flex flex-col gap-y-5 min-w-0">
+                <div class="gallerySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
-                        <div class="swiper-slide"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
+                        <div class="swiper-slide flex flex-col content-between gap-14"><img class="" src="img/card/main_card.png"></div>
                     </div>
                 </div>
                 <div class="flex justify-between">
-                    <div class="s-button-prev flex justify-start"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_left.svg" alt=""></div>
-                    <div class="justify-self-center self-center"><div class="s-pagination"></div></div>
-                    <div class="s-button-next flex justify-end"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_right.svg" alt=""></div>
+                    <div class="gallerySwiper-button-prev flex justify-start"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_left.svg" alt=""></div>
+                    <div class="justify-self-center self-center"><div class="gallerySwiper-pagination"></div></div>
+                    <div class="gallerySwiper-button-next flex justify-end"><img class="w-[45%] lg:w-[100%]" src="img/icon/icon_arrow_right.svg" alt=""></div>
                 </div>
             </div>
 
 
         </section>
+
         <!-- section catalog -->
         <section class="relative mt-28 mx-auto">
             <h2 class="section-title">Каталог Спецтехники</h2>
@@ -250,6 +251,7 @@
                 </div>
             </div>
         </section>
+
         <!-- section news -->
         <section class="mt-36">
             <h2 class="section-title">Новости</h2>
@@ -306,24 +308,68 @@
         <!-- section partners -->
         <section class="mt-36">
             <h2 class="section-title">Наши партнеры</h2>
-            <div class="flex items-center justify-between mt-24 pb-10">
-                <button><img src="img/icon/icon_arrow_left.svg"></button>
-                <div class="grid-cols-4 gap-x-8 gap-y-14 lg:grid hidden ">
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/BALT.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/VTB.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/RESO.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/CAR.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/SBER.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/EVRO.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/SOV.png"></div>
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/GAZ.png"></div>
+            <!-- DESCKTOP -->
+            <div class="hidden lg:flex items-center justify-between mt-24 pb-10">
+                <div class="partnerSwiper-button-prev"><img class="w-[100%]" src="img/icon/icon_arrow_left.svg" alt=""></div>
+                <div class="partnerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex flex-col content-between">
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/BALT.png"></div>
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/VTB.png"></div>
+                        </div>
+                        <div class="swiper-slide flex flex-col content-between">
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/RESO.png"></div>
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/CAR.png"></div>
+                        </div>
+                        <div class="swiper-slide flex flex-col content-between">
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/SBER.png"></div>
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/EVRO.png"></div>
+                        </div>
+                        <div class="swiper-slide flex flex-col content-between">
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/SOV.png"></div>
+                            <div class="flex justify-center items-center h-[120px]"><img class="" src="img/partners/GAZ.png"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="lg:hidden">
-                    <div class="flex justify-start items-center"><img class="" src="img/partners/VTB.png"></div>
-                </div>
-                <button><img src="img/icon/icon_arrow_right.svg"></button>
+                <div class="partnerSwiper-button-next"><img class="w-[100%]" src="img/icon/icon_arrow_right.svg" alt=""></div>
             </div>
+            
+            <!-- MOBILE -->
+            <div class="flex lg:hidden items-center justify-between mt-24 pb-10">
+                <div class="partnerSwiperMobile-button-prev"><img class="w-[100%]" src="img/icon/icon_arrow_left.svg" alt=""></div>
+                <div class="partnerSwiperMobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/BALT.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/VTB.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/RESO.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/CAR.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/SBER.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/EVRO.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/SOV.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="img/partners/GAZ.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="partnerSwiperMobile-button-next"><img class="w-[100%]" src="img/icon/icon_arrow_right.svg" alt=""></div>
+            </div>
+
         </section>
+
         <!-- our shipments -->
         <section class="mt-36">
             <h2 class="section-title">Наши отгрузки</h2>

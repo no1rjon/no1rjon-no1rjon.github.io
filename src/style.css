@@ -21,20 +21,20 @@ button{
 }
 
 .bg-first {
-    background-image: url(/img/background/Group.png);
+    background-image: url(img/background/Group.png);
     background-repeat: no-repeat;
 
 }
 
 .bg-footer {
-    background-image: url(/img/background/back_footer.png);
+    background-image: url(img/background/back_footer.png);
     background-position: 0% 10%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-footer_small {
-    background-image: url(/img/background/back_footer_small.png);
+    background-image: url(img/background/back_footer_small.png);
     background-position: 500px 100px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -78,15 +78,35 @@ button{
     @apply text-4xl lg:text-5xl font-semibold font-overpass pl-0 lg:pl-36 
 }
 
-/* SWIPER */
+/* GALLERY SWIPER */
 
-.swiper {
-    @apply p-0 border-[10px] border-[#FF9B00] max-w-[100%] max-h-[100%]
+.gallerySwiper {
+    @apply p-0 border-[10px] border-[#FF9B00] max-w-[100%] max-h-[100%] overflow-hidden
 }
 
-.s-pagination .swiper-pagination-bullet {
+.gallerySwiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
-    @apply bg-orange-400 shrink-0 h-[4px] w-[8px] sm:h-[10px] sm:w-[30px]
+    @apply bg-gray-400 hover:bg-orange-400 active:bg-orange-400 shrink-0 h-[4px] w-[8px] lg:h-[10px] lg:w-[30px]
+}
+
+.gallerySwiper-pagination .swiper-pagination-bullet-active {
+    border-radius: 0;
+    @apply bg-orange-400
+}
+
+
+/* PARTNER SWIPER */
+
+.partnerSwiper {
+    @apply h-[220px] w-[900px] mx-auto overflow-hidden
+} 
+
+.partnerSwiperMobile {
+    @apply w-[220px] mx-auto overflow-hidden
+} 
+
+.partnerSwiperMobile .swiper-slide {
+    @apply flex justify-center content-center
 }
 
 /* nav */
@@ -242,25 +262,24 @@ button{
 } 
 
 @layer components {
-    .nav-modal {
+    .modal-menu {
         @apply hidden fixed z-[2] left-0 top-0 w-[100%] h-[100%] overflow-hidden bg-white
     }
     
-    .nav-modal__window {
+    .modal-menu__window {
         @apply mt-8 mx-auto p-[20px] max-w-lg flex flex-col align-middle
     }
     
-    .nav-modal__window svg {
+    .modal-menu__window svg {
         @apply mb-12 justify-self-end cursor-pointer block 
     }
     
-    .nav-modal__window ul{
+    .modal-menu__window ul{
         @apply flex flex-col gap-y-9 font-overpass text-xl font-extrabold text-end mb-32
     }
     
 }
-
-.nav-modal_open {
+.modal-menu_open {
     @apply block
 }
 
