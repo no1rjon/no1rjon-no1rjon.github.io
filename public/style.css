@@ -1659,7 +1659,7 @@ button{
 
 .bg-first {
   background-repeat: no-repeat;
-  background-image: url('../img/background/group.png')
+  background-image: url('/img/background/group.png')
 }
 
 .button-animation {
