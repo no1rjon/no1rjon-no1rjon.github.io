@@ -247,9 +247,10 @@ button{
     }    
 } 
 
+/* MODAL MENU */
 @layer components {
     .modal-menu {
-        @apply hidden fixed z-[2] left-0 top-0 w-[100%] h-[100%] overflow-hidden bg-white
+        @apply hidden fixed z-10 left-0 top-0 w-[100%] h-[100%] overflow-hidden bg-white
     }
     
     .modal-menu__window {
@@ -267,6 +268,14 @@ button{
 }
 .modal-menu_open {
     @apply block
+}
+
+/* MODAL COLLBACK */
+@layer components {
+    .modal-collback {
+        @apply hidden flex-col gap-14 fixed top-[10%] left-[13%] w-[75%] h-[80%] bg-white border-orange-400 border-[10px] z-10
+    }
+
 }
 
 @layer components {

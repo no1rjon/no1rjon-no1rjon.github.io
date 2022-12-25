@@ -1037,7 +1037,7 @@ select {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 2;
+  z-index: 10;
   display: none;
   height: 100%;
   width: 100%;
@@ -1074,6 +1074,23 @@ select {
   line-height: 1.75rem;
   font-weight: 800;
   font-family: 'Overpass', sans-serif;
+}
+
+.modal-collback {
+  position: fixed;
+  top: 10%;
+  left: 13%;
+  z-index: 10;
+  display: none;
+  height: 80%;
+  width: 75%;
+  flex-direction: column;
+  gap: 3.5rem;
+  border-width: 10px;
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .pop-query {
@@ -1177,6 +1194,10 @@ select {
   margin-top: 4rem;
 }
 
+.ml-52 {
+  margin-left: 13rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -1251,6 +1272,10 @@ select {
 
 .h-\[100\%\] {
   height: 100%;
+}
+
+.w-\[43\%\] {
+  width: 43%;
 }
 
 .w-\[45\%\] {
@@ -1431,16 +1456,12 @@ select {
   border-color: rgb(255 155 0 / var(--tw-border-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/background\/back_footer\.png\'\)\] {
-  background-image: url('../img/background/back_footer.png');
-}
-
-.bg-\[url\(\'\/img\/background\/group\.png\'\)\] {
-  background-image: url('/img/background/group.png');
-}
-
 .bg-\[url\(\'\.\.\/img\/background\/group\.png\'\)\] {
   background-image: url('../img/background/group.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/background\/back_footer\.png\'\)\] {
+  background-image: url('../img/background/back_footer.png');
 }
 
 .bg-bottom {
@@ -1570,6 +1591,11 @@ select {
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1600,6 +1626,11 @@ select {
   color: rgb(17 24 49 / var(--tw-text-opacity));
 }
 
+.text-\[\#223062\] {
+  --tw-text-opacity: 1;
+  color: rgb(34 48 98 / var(--tw-text-opacity));
+}
+
 .text-\[\#00437B\] {
   --tw-text-opacity: 1;
   color: rgb(0 67 123 / var(--tw-text-opacity));
@@ -1608,11 +1639,6 @@ select {
 .text-blue-900 {
   --tw-text-opacity: 1;
   color: rgb(30 58 138 / var(--tw-text-opacity));
-}
-
-.text-\[\#223062\] {
-  --tw-text-opacity: 1;
-  color: rgb(34 48 98 / var(--tw-text-opacity));
 }
 
 .text-\[\#3C4155\] {
@@ -1794,9 +1820,13 @@ button{
 
 /* shipments */
 
+/* MODAL MENU */
+
 .modal-menu_open {
   display: block;
 }
+
+/* MODAL COLLBACK */
 
 .hover\:text-\[\#3c4155c0\]:hover {
   color: #3c4155c0;
