@@ -1439,6 +1439,10 @@ select {
   background-image: url('/img/background/group.png');
 }
 
+.bg-\[url\(\'\.\.\/img\/background\/group\.png\'\)\] {
+  background-image: url('../img/background/group.png');
+}
+
 .bg-bottom {
   background-position: bottom;
 }
