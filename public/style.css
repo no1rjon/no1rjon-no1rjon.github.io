@@ -1435,6 +1435,10 @@ select {
   background-image: url('../img/background/back_footer.png');
 }
 
+.bg-\[url\(\'\/img\/background\/group\.png\'\)\] {
+  background-image: url('/img/background/group.png');
+}
+
 .bg-bottom {
   background-position: bottom;
 }
@@ -1658,7 +1662,6 @@ button{
 }
 
 .bg-first {
-  background-image: url('/img/background/group.png');
   background-repeat: no-repeat;
 }
 
