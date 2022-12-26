@@ -1078,11 +1078,11 @@ select {
 
 .modal-collback {
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 13%;
   z-index: 10;
   display: none;
-  height: 80%;
+  height: 90%;
   width: 75%;
   flex-direction: column;
   gap: 3.5rem;
@@ -1091,6 +1091,102 @@ select {
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.collback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.collback-form__group {
+  position: relative;
+}
+
+.collback-form__label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  z-index: -1;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(123 127 139 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.collback-form__input {
+  width: 100%;
+  border-width: 3px;
+  --tw-border-opacity: 1;
+  border-color: rgb(34 48 98 / var(--tw-border-opacity));
+  background-color: transparent;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.collback-form__input:hover,
+    .collback-form__input:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(251 146 60 / var(--tw-ring-opacity));
+}
+
+.collback-form__input:not(:-moz-placeholder-shown) {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+
+.collback-form__input:not(:placeholder-shown) {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+
+.collback-form__input:not(:-moz-placeholder-shown) ~ .collback-form__label {
+  top: -0.5rem;
+  z-index: 1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  -moz-transition-property: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.collback-form__input:focus ~ .collback-form__label,
+    .collback-form__input:not(:placeholder-shown) ~ .collback-form__label {
+  top: -0.5rem;
+  z-index: 1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.collback-form__inputFile {
+  position: absolute;
+  right: -3.5rem;
+  bottom: 1rem;
+  display: flex;
+}
+
+.collback-form__inputFile > input {
+  z-index: -10;
+  opacity: 0;
 }
 
 .pop-query {
@@ -1169,12 +1265,76 @@ select {
   position: static;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .sticky {
   position: sticky;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-14 {
+  right: 3.5rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
+.right-20 {
+  right: 5rem;
 }
 
 .row-span-2 {
@@ -1194,8 +1354,8 @@ select {
   margin-top: 4rem;
 }
 
-.ml-52 {
-  margin-left: 13rem;
+.ml-48 {
+  margin-left: 12rem;
 }
 
 .mt-28 {
@@ -1274,8 +1434,13 @@ select {
   height: 100%;
 }
 
-.w-\[43\%\] {
-  width: 43%;
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-\[45\%\] {
@@ -1320,6 +1485,10 @@ select {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .resize {
@@ -1423,6 +1592,10 @@ select {
   justify-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1456,6 +1629,10 @@ select {
   border-color: rgb(255 155 0 / var(--tw-border-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-\[url\(\'\.\.\/img\/background\/group\.png\'\)\] {
   background-image: url('../img/background/group.png');
 }
@@ -1470,6 +1647,10 @@ select {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-\[\#223062\] {
+  fill: #223062;
 }
 
 .p-1 {
@@ -1509,6 +1690,16 @@ select {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-2 {
@@ -1644,6 +1835,11 @@ select {
 .text-\[\#3C4155\] {
   --tw-text-opacity: 1;
   color: rgb(60 65 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#7B7F8B\] {
+  --tw-text-opacity: 1;
+  color: rgb(123 127 139 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1827,6 +2023,10 @@ button{
 }
 
 /* MODAL COLLBACK */
+
+.modal-collback_open {
+  display: flex;
+}
 
 .hover\:text-\[\#3c4155c0\]:hover {
   color: #3c4155c0;

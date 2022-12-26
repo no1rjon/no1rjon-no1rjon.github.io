@@ -273,9 +273,52 @@ button{
 /* MODAL COLLBACK */
 @layer components {
     .modal-collback {
-        @apply hidden flex-col gap-14 fixed top-[10%] left-[13%] w-[75%] h-[80%] bg-white border-orange-400 border-[10px] z-10
+        @apply hidden flex-col gap-14 fixed top-[5%] left-[13%] w-[75%] h-[90%] bg-white border-orange-400 border-[10px] z-10
     }
 
+    .collback-form {
+        @apply flex flex-col gap-10
+    }
+
+    .collback-form__group {
+        @apply relative
+    }
+
+    .collback-form__label {
+        @apply absolute top-2 left-3 z-[-1] text-[#7B7F8B] font-light text-xl px-1 py-0 bg-white transition-all
+    }
+
+    .collback-form__input {
+        @apply bg-transparent w-full border-[#223062] border-[3px] transition 
+    }
+
+    .collback-form__input:hover,
+    .collback-form__input:focus {
+        @apply border-orange-400 ring-orange-400         
+    }
+
+    .collback-form__input:not(:placeholder-shown) {
+        @apply border-orange-400
+    }
+
+    .collback-form__input:focus ~ .collback-form__label,
+    .collback-form__input:not(:placeholder-shown) ~ .collback-form__label{
+        @apply transition-all text-sm -top-2 z-[1]
+    }
+    
+    .collback-form__inputFile {
+        @apply flex absolute -right-14 bottom-4
+    }
+
+    .collback-form__inputFile > input {
+        z-index: -10;
+        opacity: 0;
+    }
+
+}
+
+.modal-collback_open {
+    @apply flex
 }
 
 @layer components {
