@@ -4,7 +4,7 @@ const uploadedFile = document.getElementById("file");
 
 const divLabelFile = document.getElementById("place-lable")
 
-const fileLoaded = () => {
+const defineNameFile = () => {
     const amountTransferredFiles = uploadedFile.files.length;
     
     if(amountTransferredFiles == 0) {
@@ -22,4 +22,4 @@ const fileLoaded = () => {
 }
 
 
-uploadedFile.addEventListener('change', fileLoaded)
+uploadedFile.addEventListener('change', defineNameFile)
