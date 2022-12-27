@@ -273,7 +273,7 @@ button{
 /* MODAL COLLBACK */
 @layer components {
     .modal-collback {
-        @apply hidden flex-col gap-14 fixed top-[5%] left-[13%] w-[75%] h-[90%] bg-white border-orange-400 border-[10px] z-10
+        @apply hidden flex-col gap-14 fixed top-[2%] left-[13%] w-[75%] h-[95%] bg-white border-orange-400 border-[10px] z-10
     }
 
     .collback-form {
@@ -306,15 +306,36 @@ button{
         @apply transition-all text-sm -top-2 z-[1]
     }
     
-    .collback-form__inputFile {
-        @apply flex absolute -right-14 bottom-4
+    .collback-form__file-group {
+        @apply flex absolute right-1 bottom-4
     }
 
-    .collback-form__inputFile > input {
+    .collback-form__file-group > input {
         z-index: -10;
         opacity: 0;
+        @apply fixed -top-10 -right-10
     }
 
+    .collback-form__file-group_hover-place {
+        @apply inline-flex gap-1 mr-2 cursor-pointer
+    }
+
+    .collback-form__file-group_hover-place:hover svg,
+    .collback-form__file-group_hover-place:hover label{
+        @apply fill-[#005F9E] text-[#005F9E] cursor-pointer
+    }
+
+    .file-loaded svg {
+        @apply fill-[#005F9E]
+    }
+
+    .file-loaded label {
+        @apply text-[#005F9E]
+    }
+
+    .file-loaded rect{
+       @apply hidden
+    }
 }
 
 .modal-collback_open {

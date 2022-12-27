@@ -14,7 +14,7 @@
     <link
         rel="stylesheet"
         href="public/swiper-bundle.min.css"
-    />
+    />    
     <title>Garant Auto</title>
 </head>
 <body class="bg-first bg-[url('../img/background/group.png')]">
@@ -114,15 +114,18 @@
                     <div class="collback-form__group flex flex-col relative">
                         <textarea class="collback-form__input resize-none" placeholder="  " cols="300" rows="5"></textarea>
                         <label class="collback-form__label">Информация о заказе</label>
-                        <div class="collback-form__inputFile">
-                            <input name="file" id="file" type="file" data-multiple-caption="{count} файлов выбранно" multiple>
-                            <label class="font-light text-sm text-[#7B7F8B] absolute bottom-1 right-32" for="file">Прикрепить документ</label>
-                            <label class="absolute right-20 bottom-0" for="file"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27.5319 10.9375L21.875 5.28063V10.9375H27.5319ZM28.4375 13.125H19.6875V4.375H6.5625V30.625H28.4375V13.125ZM5.46875 2.1875H21.875L30.625 10.9375V31.7188C30.625 32.0088 30.5098 32.287 30.3046 32.4921C30.0995 32.6973 29.8213 32.8125 29.5312 32.8125H5.46875C5.17867 32.8125 4.90047 32.6973 4.69535 32.4921C4.49023 32.287 4.375 32.0088 4.375 31.7188V3.28125C4.375 2.99117 4.49023 2.71297 4.69535 2.50785C4.90047 2.30273 5.17867 2.1875 5.46875 2.1875Z" fill="#223062"/>
-                                <rect x="16.5569" y="24.7305" width="9.43114" height="1.88623" transform="rotate(-90 16.5569 24.7305)" fill="#223062"/>
-                                <rect x="12.7844" y="19.0718" width="9.43114" height="1.88623" fill="#223062"/>
-                                </svg>
-                            </label>
+                        <div class="collback-form__file-group">
+                            <input name="file" id="file" type="file" class="input-file" data-multiple-caption="{count} файлов выбранно" multiple>
+                            <div id="place-lable" class="collback-form__file-group_hover-place">
+                                <label id="lable-text" class="font-light text-sm text-[#7B7F8B] self-center" for="file">Прикрепить документ</label>
+                                <label class="" for="file">
+                                    <svg class="fill-[#223062]" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27.5319 10.9375L21.875 5.28063V10.9375H27.5319ZM28.4375 13.125H19.6875V4.375H6.5625V30.625H28.4375V13.125ZM5.46875 2.1875H21.875L30.625 10.9375V31.7188C30.625 32.0088 30.5098 32.287 30.3046 32.4921C30.0995 32.6973 29.8213 32.8125 29.5312 32.8125H5.46875C5.17867 32.8125 4.90047 32.6973 4.69535 32.4921C4.49023 32.287 4.375 32.0088 4.375 31.7188V3.28125C4.375 2.99117 4.49023 2.71297 4.69535 2.50785C4.90047 2.30273 5.17867 2.1875 5.46875 2.1875Z"/>
+                                        <rect x="16.5569" y="24.7305" width="9.43114" height="1.88623" transform="rotate(-90 16.5569 24.7305)"/>
+                                        <rect x="12.7844" y="19.0718" width="9.43114" height="1.88623"/>
+                                    </svg>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
@@ -490,6 +493,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/modal.js" type="module"></script>
     <script src="js/main.js"></script>
+    <script src="js/file-group.js"></script>
     
 </body>
 </html>

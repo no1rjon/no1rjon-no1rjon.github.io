@@ -1078,11 +1078,11 @@ select {
 
 .modal-collback {
   position: fixed;
-  top: 5%;
+  top: 2%;
   left: 13%;
   z-index: 10;
   display: none;
-  height: 90%;
+  height: 95%;
   width: 75%;
   flex-direction: column;
   gap: 3.5rem;
@@ -1177,16 +1177,47 @@ select {
   transition-duration: 150ms;
 }
 
-.collback-form__inputFile {
+.collback-form__file-group {
   position: absolute;
-  right: -3.5rem;
+  right: 0.25rem;
   bottom: 1rem;
   display: flex;
 }
 
-.collback-form__inputFile > input {
+.collback-form__file-group > input {
   z-index: -10;
   opacity: 0;
+  position: fixed;
+  top: -2.5rem;
+  right: -2.5rem
+}
+
+.collback-form__file-group_hover-place {
+  margin-right: 0.5rem;
+  display: inline-flex;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+
+.collback-form__file-group_hover-place:hover svg,
+    .collback-form__file-group_hover-place:hover label {
+  cursor: pointer;
+  fill: #005F9E;
+  --tw-text-opacity: 1;
+  color: rgb(0 95 158 / var(--tw-text-opacity));
+}
+
+.file-loaded svg {
+  fill: #005F9E;
+}
+
+.file-loaded label {
+  --tw-text-opacity: 1;
+  color: rgb(0 95 158 / var(--tw-text-opacity));
+}
+
+.file-loaded rect {
+  display: none;
 }
 
 .pop-query {
@@ -1283,58 +1314,6 @@ select {
 
 .top-20 {
   top: 5rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-14 {
-  right: 3.5rem;
-}
-
-.right-16 {
-  right: 4rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.-bottom-1 {
-  bottom: -0.25rem;
-}
-
-.right-36 {
-  right: 9rem;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.right-32 {
-  right: 8rem;
-}
-
-.right-20 {
-  right: 5rem;
 }
 
 .row-span-2 {
@@ -1804,12 +1783,12 @@ select {
   font-weight: 700;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-\[\#111831\] {
@@ -1820,6 +1799,11 @@ select {
 .text-\[\#223062\] {
   --tw-text-opacity: 1;
   color: rgb(34 48 98 / var(--tw-text-opacity));
+}
+
+.text-\[\#7B7F8B\] {
+  --tw-text-opacity: 1;
+  color: rgb(123 127 139 / var(--tw-text-opacity));
 }
 
 .text-\[\#00437B\] {
@@ -1835,11 +1819,6 @@ select {
 .text-\[\#3C4155\] {
   --tw-text-opacity: 1;
   color: rgb(60 65 85 / var(--tw-text-opacity));
-}
-
-.text-\[\#7B7F8B\] {
-  --tw-text-opacity: 1;
-  color: rgb(123 127 139 / var(--tw-text-opacity));
 }
 
 .shadow {
