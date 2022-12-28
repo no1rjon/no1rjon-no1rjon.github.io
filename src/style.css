@@ -273,7 +273,7 @@ button{
 /* MODAL COLLBACK */
 @layer components {
     .modal-collback {
-        @apply hidden flex-col gap-14 fixed top-0 lg:top-[2%] left-0 lg:left-[13%] w-full lg:w-[75%] h-full lg:h-[95%] bg-white border-orange-400 border-[10px] z-10
+        @apply hidden flex-col gap-8 lg:gap-14 fixed top-0 lg:top-[2%] left-0 lg:left-[13%] w-full lg:w-[75%] h-full lg:h-[95%] bg-white border-orange-400 border-[10px] z-10
     }
 
     .collback-form {

@@ -1085,7 +1085,7 @@ select {
   height: 100%;
   width: 100%;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 2rem;
   border-width: 10px;
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
@@ -1099,6 +1099,7 @@ select {
     left: 13%;
     height: 95%;
     width: 75%;
+    gap: 3.5rem;
   }
 }
 
@@ -1317,12 +1318,12 @@ select {
   position: sticky;
 }
 
-.right-24 {
-  right: 6rem;
+.right-4 {
+  right: 1rem;
 }
 
-.top-20 {
-  top: 5rem;
+.top-4 {
+  top: 1rem;
 }
 
 .row-span-2 {
@@ -1338,12 +1339,16 @@ select {
   margin-bottom: 1.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
-.ml-28 {
-  margin-left: 7rem;
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-28 {
@@ -1364,10 +1369,6 @@ select {
 
 .mt-40 {
   margin-top: 10rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mb-16 {
@@ -1617,10 +1618,6 @@ select {
   border-color: rgb(255 155 0 / var(--tw-border-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-\[url\(\'\.\.\/img\/background\/group\.png\'\)\] {
   background-image: url('../img/background/group.png');
 }
@@ -1680,9 +1677,9 @@ select {
   padding-right: 1.75rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
@@ -2022,6 +2019,26 @@ button{
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-24 {
+    right: 6rem;
+  }
+
+  .lg\:top-20 {
+    top: 5rem;
+  }
+
+  .lg\:top-16 {
+    top: 4rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:ml-28 {
+    margin-left: 7rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -2066,6 +2083,10 @@ button{
     flex-direction: row;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -2108,6 +2129,11 @@ button{
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:pb-0 {
