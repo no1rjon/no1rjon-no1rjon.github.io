@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <!-- Buttons -->
-                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
+                <button class="open-collback font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
             </div>
             <!-- MOBILE -->
             <div class="block lg:hidden items-center flex-shrink">
@@ -62,7 +62,7 @@
                 <li><a href="#">Новости</a></li>
             </ul>
         </nav>
-        <!-- modal navigation -->
+        <!-- modal menu -->
         <nav class="modal-menu" id="modal-menu">
             <div class="modal-menu__window">
                 <div class="flex justify-end">
@@ -78,9 +78,57 @@
                     <a><li>Контакты</li></a>
                     <a><li>Новости</li></a>
                 </ul>
-                <button class="font-bold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-7 button-animation">Обратная связь</button>
+                <button class="open-collback font-bold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-7 button-animation">Обратная связь</button>
             </div>
         </nav>
+
+        <!-- modal collback -->
+        <div class="modal-collback" id="modal-collback">
+            <h2 class="mt-4 lg:mt-16 ml-4 lg:ml-28 font-overpass text-3xl xl:text-5xl text-[#223062] font-bold xl:font-extrabold w-[70%] xl:w-[60%] ">Оставьте ваши контакты, 
+                и мы свяжемся с вами!</h2>
+            <div class="absolute right-4 top-4 lg:right-24 lg:top-16">
+                <svg id="close-collback" class="cursor-pointer fill-[#223062]" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="21.2132" width="30" height="5" transform="rotate(-45 2 21.2132)"/>
+                    <rect width="30" height="5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 2.37427 3.53553)"/>
+                </svg>
+            </div>
+            <div class="px-4 lg:px-24">
+                <form class="collback-form" action="">
+                    <div class="collback-form__group">
+                        <input class="collback-form__input" type="text" placeholder="  ">
+                        <label class="collback-form__label">ФИО</label>
+                    </div>
+                    <div class="collback-form__group">
+                        <input class="collback-form__input" type="text" placeholder="  ">
+                        <label class="collback-form__label">Ваш номер телефона</label>
+                    </div>                    
+                    <div class="collback-form__group">
+                        <input class="collback-form__input" type="text" placeholder="  ">
+                        <label class="collback-form__label">E-mail</label>
+                    </div>
+                    <div class="collback-form__group flex flex-col relative">
+                        <textarea class="collback-form__input resize-none" placeholder="  " cols="300" rows="5"></textarea>
+                        <label class="collback-form__label">Информация о заказе</label>
+                        <div class="collback-form__file-group">
+                            <input name="file" id="file" type="file" class="input-file" multiple>
+                            <div id="place-lable" class="collback-form__file-group_hover-place">
+                                <label id="lable-text" class="font-light text-sm text-[#7B7F8B] self-center" for="file">Прикрепить документ</label>
+                                <label class="" for="file">
+                                    <svg class="fill-[#223062]" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27.5319 10.9375L21.875 5.28063V10.9375H27.5319ZM28.4375 13.125H19.6875V4.375H6.5625V30.625H28.4375V13.125ZM5.46875 2.1875H21.875L30.625 10.9375V31.7188C30.625 32.0088 30.5098 32.287 30.3046 32.4921C30.0995 32.6973 29.8213 32.8125 29.5312 32.8125H5.46875C5.17867 32.8125 4.90047 32.6973 4.69535 32.4921C4.49023 32.287 4.375 32.0088 4.375 31.7188V3.28125C4.375 2.99117 4.49023 2.71297 4.69535 2.50785C4.90047 2.30273 5.17867 2.1875 5.46875 2.1875Z"/>
+                                        <rect x="16.5569" y="24.7305" width="9.43114" height="1.88623" transform="rotate(-90 16.5569 24.7305)"/>
+                                        <rect x="12.7844" y="19.0718" width="9.43114" height="1.88623"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end lg:justify-center">
+                        <button class="py-1 px-8 w-fit border-[#FF9B00] border-[10px] text-3xl font-extrabold text-overpass button-animation">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
     
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
@@ -184,7 +232,7 @@
             <!-- left side -->
             <div class="flex flex-col gap-y-16 ">
                 <a href="index.html"><img src="img/logo/logo_footer.svg"></a>
-                <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
+                <button class="open-collback font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
                 <div class="flex flex-col gap-4 lg:gap-7">
                     <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a></div>
                     <div><a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a></div>
@@ -192,7 +240,7 @@
             </div>
             <!-- right side -->
             <div class="flex flex-col gap-y-11">
-                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
+                <button class="open-collback font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
                 <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-4 mt-4 lg:gap-7 lg:mt-0">
                     <li><a href="product.html">Каталог спецтехники</a></li>
                     <li><a href="">Услуги</a></li>
@@ -205,5 +253,6 @@
     </footer>
 
     <script src="js/modal.js"></script>
+    <script src="js/file-group.js"></script>
 </body>
 </html>
