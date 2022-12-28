@@ -1086,6 +1086,7 @@ select {
   width: 100%;
   flex-direction: column;
   gap: 2rem;
+  overflow: hidden;
   border-width: 10px;
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
@@ -2021,10 +2022,6 @@ button{
 @media (min-width: 1024px) {
   .lg\:right-24 {
     right: 6rem;
-  }
-
-  .lg\:top-20 {
-    top: 5rem;
   }
 
   .lg\:top-16 {
