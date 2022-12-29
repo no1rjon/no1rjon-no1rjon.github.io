@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
+    <link
+        rel="stylesheet"
+        href="public/swiper-bundle.min.css"
+    />    
     <title>Garant Auto</title>
 </head>
-<body>
-    
+<body class="bg-first bg-[url('../img/background/group.png')]">
+
     <!-- header -->
     <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
         <!-- Logo and contacts  -->
@@ -131,100 +135,20 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- main -->
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
-        <section>
-            <h2 class="section-title">Каталог</h2>
-            <div class="grid grid-cols-3 gap-5 mt-20 mx-auto">
-                <div class="card">
-                    <h3 class="card__title">Фургоны в наличии</h3>
-                    <img src="img/card/card1.png" alt="">
-                    <a href="vans_available.html" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img src="img/card/card2.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Передвижные мастерские</h3>
-                    <img src="img/card/card3.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Передвижные лаборатории</h3>
-                    <img src="img/card/card4.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
-                    <img src="img/card/card5.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника МЧС</h3>
-                    <img src="img/card/card6.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника МВД</h3>
-                    <img src="img/card/card7.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Изотермические фургоны</h3>
-                    <img src="img/card/card8.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Цельнометаллические фургоны</h3>
-                    <img src="img/card/card9.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Фургоны по индивидуальному заказу</h3>
-                    <img src="img/card/card10.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Контейнеры различного назначения</h3>
-                    <img src="img/card/card11.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
+        <section class="mb-24 ">
+            <h2 class="text-overpass font-bold text-3xl ml-0 lg:ml-28 mb-20">Связаться с нами</h2>
+            <div class="flex flex-col ml-0 lg:ml-28 gap-8">
+                <a class="text-[#005F9E] text-overpass font-bold text-3xl " href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+                <a class="text-[#005F9E] text-overpass font-bold text-3xl " href="tel:+74959899570">8 (495) 989-95-70</a>
             </div>
+        </section>
+        <section>
+            <h2 class="text-overpass font-bold text-3xl ml-0 lg:ml-28 mb-10">Где нас найти</h2>
+            <iframe class="border-[10px] border-orange-400 w-full h-[600px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19951.8850327508!2d59.75994008406382!3d58.28907628912372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43eaf9a5efa736a3%3A0x3c8458137be55fae!2z0J_QsNGA0Log0LrRg9C70YzRgtGD0YDRiw!5e0!3m2!1sru!2sru!4v1672292514203!5m2!1sru!2sru"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
@@ -254,7 +178,10 @@
         </section>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/modal.js" type="module"></script>
+    <script src="js/main.js"></script>
     <script src="js/file-group.js"></script>
+    
 </body>
 </html>

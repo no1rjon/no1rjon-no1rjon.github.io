@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
+    <link
+        rel="stylesheet"
+        href="public/swiper-bundle.min.css"
+    />    
     <title>Garant Auto</title>
 </head>
-<body>
-    
+<body class="bg-first bg-[url('../img/background/group.png')]">
+
     <!-- header -->
     <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
         <!-- Logo and contacts  -->
@@ -131,100 +135,23 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- main -->
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
         <section>
-            <h2 class="section-title">Каталог</h2>
-            <div class="grid grid-cols-3 gap-5 mt-20 mx-auto">
-                <div class="card">
-                    <h3 class="card__title">Фургоны в наличии</h3>
-                    <img src="img/card/card1.png" alt="">
-                    <a href="vans_available.html" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img src="img/card/card2.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Передвижные мастерские</h3>
-                    <img src="img/card/card3.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Передвижные лаборатории</h3>
-                    <img src="img/card/card4.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
-                    <img src="img/card/card5.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника МЧС</h3>
-                    <img src="img/card/card6.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Спецтехника МВД</h3>
-                    <img src="img/card/card7.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Изотермические фургоны</h3>
-                    <img src="img/card/card8.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Цельнометаллические фургоны</h3>
-                    <img src="img/card/card9.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Фургоны по индивидуальному заказу</h3>
-                    <img src="img/card/card10.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-                <div class="card">
-                    <h3 class="card__title">Контейнеры различного назначения</h3>
-                    <img src="img/card/card11.png" alt="">
-                    <a href="#" class="card__link">
-                        <span class="card__link_text">Перейти</span>
-                        <img class="" src="img/icon/icon_arrow_45.svg">
-                    </a>
-                </div>
-            </div>
+            <h2 class="section-title mb-20">Доработка</h2>
+
+            <article class="flex flex-col pt-20 border-t-4 border-orange-400 mx-auto w-full lg:w-[75%] gap-12 text text-xl font-light">
+                <p>В зависимости от возможностей и конкретных пожеланий заказчика, наши специалисты могут сделать конструктивные изменения Вашего коммерческого транспорта:</p>
+                <ul class="list-disc ml-8">
+                    <li>спроектировать и модифицировать любую конструкцию и комплектацию;</li>
+                    <li>установить: гидроборт, КМУ, КОМ, лебедку от КОМ, станки и прочее оборудование, дополнительные двери, окна;</li>
+                    <li>изменить: цвета полимерного покрытия, наружную или внутреннюю обшивку и напольное покрытие;</li>
+                    <li>утеплить кабину и фургон. Подготовка и переоборудование фургонов к эксплуатации в условиях Крайнего Севера: установить автономный отопитель предпускового подогрева в кабину и фургон, утеплить топливопроводы, установить обогрев АКБ и прочее;</li>
+                    <li>удлинить шасси;</li>
+                    <li>изготовить сдвоенную кабину.</li>
+                </ul>
+            </article>
         </section>
     </main>
 
@@ -254,7 +181,10 @@
         </section>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/modal.js" type="module"></script>
+    <script src="js/main.js"></script>
     <script src="js/file-group.js"></script>
+    
 </body>
 </html>
