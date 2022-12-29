@@ -2,23 +2,23 @@
 
 const uploadedFile = document.getElementById("file");
 
-const divLabelFile = document.getElementById("place-lable")
+const uploadedFileBox = document.getElementById("place-lable")
 
 const defineNameFile = () => {
-    const amountTransferredFiles = uploadedFile.files.length;
+    const uploadedFileAmount = uploadedFile.files.length;
     
-    if(amountTransferredFiles == 0) {
-        divLabelFile.classList.remove("file-loaded");
+    if(uploadedFileAmount == 0) {
+        uploadedFileBox.classList.remove("file-loaded");
         document.getElementById("lable-text").innerHTML = "Прикрепить документ"
         return
-    } else if(amountTransferredFiles == 1) {
+    } else if(uploadedFileAmount == 1) {
         document.getElementById("lable-text").innerHTML = uploadedFile.value
     } else {
-        let stringFilesLoaded = "Файлов выбрано ";
-        stringFilesLoaded += amountTransferredFiles
-        document.getElementById("lable-text").innerHTML = stringFilesLoaded
+        let uploadedFileString = "Файлов выбрано ";
+        uploadedFileString += uploadedFileAmount
+        document.getElementById("lable-text").innerHTML = uploadedFileString
     }
-    divLabelFile.classList.add("file-loaded");
+    uploadedFileBox.classList.add("file-loaded");
 }
 
 
