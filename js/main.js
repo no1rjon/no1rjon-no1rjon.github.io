@@ -42,3 +42,27 @@ new Swiper('.partnerSwiperMobile', {
 
   loop: true,
 });
+
+new Swiper('.popQuerySwiper', {
+  
+  navigation: {
+    nextEl: '.popQuerySwiper-button-next',
+    prevEl: '.popQuerySwiper-button-prev',
+  },
+
+  loop: true,
+  slidesPerView: 2.4,
+  spaceBetween: 60,
+});
+
+new Swiper('.popQueryImageSwiper', {
+  pagination: {
+    el: '.popQueryImageSwiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  
+  loop: true,
+  nested: true,
+
+});

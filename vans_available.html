@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
+    <link
+    rel="stylesheet"
+    href="public/swiper-bundle.min.css"
+    />
     <title>Garant Auto</title>
 </head>
 <body class="overflow-x-hidden">
@@ -125,7 +129,7 @@
                         </div>
                     </div>
                     <div class="flex justify-end lg:justify-center">
-                        <button class="py-1 px-8 w-fit border-[#FF9B00] border-[10px] text-3xl font-extrabold text-overpass button-animation">Отправить</button>
+                        <button class="py-1 px-8 w-fit border-[#FF9B00] border-[10px] text-3xl font-extrabold font-overpass button-animation">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -179,72 +183,107 @@
         </section>
         <section>
             <h3 class="section-title mb-16 mt-28">Популярные запросы</h3>
-
-            <div class="pop-query">
-                <img class="mr-8 self-center lg:self-end" src="img/icon/icon_arrow_left.svg">
-                <!-- card -->
-                <div class="pop-query__card">
-                    <!-- upper -->
-                    <a class="pop-query__card_link" href="">
-                        <div class="flex">
-                            <h3 class="text-overpass">КамАЗ 6522</h3>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-3xl font-light text-overpass before-price">5 820 000 ₽</span>
-                            <div class="flex">
-                                <span class="self-center pr-2 text-[#3C4155] text-xl font-semibold">Подробнее</span>
-                                <img class="" src="img/icon/icon_arrow_45.svg">
-                            </div>
-                        </div>
-                    </a>
-                    <!-- down -->
-                    <div>
-                        <img class="" src="img/popular_query/Frame_1.png">
-                    </div>
-                </div>
-
-                <!-- card -->
-                <div class="pop-query__card hidden lg:flex">
-                    <!-- upper -->
-                    <a class="pop-query__card_link" href="">
-                        <div class="flex">
-                            <h3 class="text-overpass">КамАЗ 5490</h3>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-3xl font-light text-overpass before-price">100 000 000 ₽</span>
-                            <div class="flex">
-                                <span class="self-center pr-2 text-[#3C4155] text-xl font-semibold">Подробнее</span>
-                                <img class="" src="img/icon/icon_arrow_45.svg">
-                            </div>
-                        </div>
-                    </a>
-                    <!-- down -->
-                    <div class="">
-                        <img class="" src="img/popular_query/Frame_2.png">
-                    </div>
-                </div>
+            
+            <div class="flex flex-nowrap gap-x-5 ml-32">
+                <div class="popQuerySwiper-button-next self-end mr-3 w-[200px]"><img class="w-100%" src="img/icon/icon_arrow_left.svg"></div>                
                 
-                <!-- card -->
-                <div class="pop-query__card hidden lg:flex">
-                    <!-- upper -->
-                    <a class="pop-query__card_link" href="">
-                        <div class="flex">
-                            <h3 class="text-overpass">Doosan 360</h3>
+                <div class="popQuerySwiper">                   
+                    <div class="swiper-wrapper">             
+                    <div class="swiper-slide flex flex-col">
+                        <div>
+                            <a class="pop-query__card_link" href="">
+                                <span class="font-bold text-3xl font-overapss">КамАЗ 6522</span>
+                                <div class="flex justify-between">
+                                    <span class="before-price">5 820 000 ₽</span>
+                                    <img src="img/icon/icon_arrow_45.svg">
+                                </div>
+                            </a>
                         </div>
-                        <div class="flex justify-between">
-                            <span class="text-3xl font-light text-overpass before-price">16 957 600 ₽</span>
-                            <div class="flex">
-                                <span class="self-center pr-2 text-[#3C4155] text-xl font-semibold">Подробнее</span>
-                                <img class="" src="img/icon/icon_arrow_45.svg">
+                        <div class="">
+                            <div class="popQueryImageSwiper relative overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_1.png">
+                                    </div>
+                                </div>
+                                <div class="z-[1] absolute bottom-2 right-[40%]">
+                                    <div class="popQueryImageSwiper-pagination z-[1]"></div>
+                                </div>
                             </div>
+                            
                         </div>
-                    </a>
-                    <!-- down -->
-                    <div class="">
-                        <img class="" src="img/popular_query/Frame_3.png">
+                    </div>
+                    <div class="swiper-slide flex flex-col">
+                        <div>
+                            <a class="pop-query__card_link" href="">
+                                <span class="font-bold text-3xl font-overapss">КамАЗ 5490</span>
+                                <div class="flex justify-between">
+                                    <span class="before-price">100 000 000 ₽</span>
+                                    <img src="img/icon/icon_arrow_45.svg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="popQueryImageSwiper relative overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_2.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_2.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_2.png">
+                                    </div>
+                                </div>
+                                <div class="z-[1] absolute bottom-2 right-[40%]">
+                                    <div class="popQueryImageSwiper-pagination z-[1]"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col">
+                        <div>
+                            <a class="pop-query__card_link" href="">
+                                <span class="font-bold text-3xl font-overapss">Doosan 360</span>
+                                <div class="flex justify-between">
+                                    <span class="before-price">16 957 600 ₽</span>
+                                    <img src="img/icon/icon_arrow_45.svg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="popQueryImageSwiper relative overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_3.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_3.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/popular_query/Frame_3.png">
+                                    </div>
+                                </div>
+                                <div class="z-[1] absolute bottom-2 right-[40%]">
+                                    <div class="popQueryImageSwiper-pagination z-[1]"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
+           
+
         </section>
     </main>
 
@@ -274,6 +313,8 @@
         </section>
     </footer>
     
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/file-group.js"></script>
 </body>

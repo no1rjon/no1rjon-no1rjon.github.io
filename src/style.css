@@ -94,6 +94,59 @@ button{
     @apply flex justify-center content-center 
 }
 
+/* POP QUERY SWIPER */
+
+.popQuerySwiper {
+    @apply overflow-hidden relative
+}
+
+.popQuerySwiper .swiper-slide {
+    @apply w-[900px]
+}
+
+.popQueryImageSwiper-pagination .swiper-pagination-bullet {
+    border-radius: 0;
+    @apply bg-white hover:bg-orange-400 active:bg-orange-400 shrink-0 h-[8px] w-[24px] backdrop-opacity-100
+}
+
+.popQueryImageSwiper-pagination .swiper-pagination-bullet-active {
+    border-radius: 0;
+    @apply bg-orange-400
+}
+
+
+.pop-query {
+    @apply flex flex-nowrap gap-x-16 ml-0 lg:ml-36 overflow-visible
+}
+    
+.pop-query__card {
+    @apply flex flex-col gap-8 shrink-0 max-w-[100%] lg:max-w-[45%]
+}
+
+.pop-query__card_link {
+    @apply flex flex-col content-between gap-10 mb-5
+}
+
+.pop-query__card_link img{
+    @apply transition
+}
+
+.pop-query__card_link .before-price{
+    @apply text-3xl font-light font-overpass
+}
+
+
+.pop-query__card_link:hover img{
+    @apply rotate-45 transition
+}
+
+.before-price::before{
+    content: "от";
+    @apply text-xl font-light pr-1
+}
+
+
+
 
 /* nav */
 @layer components{
@@ -341,36 +394,3 @@ button{
 .modal-collback_open {
     @apply flex
 }
-
-@layer components {
-    .pop-query {
-        @apply flex flex-nowrap gap-x-16 ml-0 lg:ml-36 overflow-visible
-    }
-    
-    .pop-query__card {
-        @apply flex flex-col gap-8 shrink-0 max-w-[100%] lg:max-w-[45%]
-    }
-
-    .pop-query__card_link {
-        @apply flex flex-col content-between gap-10
-    }
-
-    .pop-query__card_link h3{
-        @apply font-semibold text-3xl
-    }
-
-    .pop-query__card_link img{
-        @apply transition
-    }
-
-    .pop-query__card_link:hover img{
-        @apply rotate-45 transition
-    }
-
-    .before-price::before{
-        content: "от";
-        @apply text-xl font-light pr-1
-    }
-
-}
-
