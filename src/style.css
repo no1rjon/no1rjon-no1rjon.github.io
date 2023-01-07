@@ -46,7 +46,7 @@ button{
 }
 
 .button-animation:hover:before,:focus:before {
-    width: 120%;
+    width: 130%;
 }
 
 .button-animation:active::before {
@@ -97,11 +97,11 @@ button{
 /* POP QUERY SWIPER */
 
 .popQuerySwiper {
-    @apply overflow-hidden relative
+    @apply w-[2800px] overflow-hidden relative
 }
 
 .popQuerySwiper .swiper-slide {
-    @apply w-[900px]
+    @apply w-full
 }
 
 .popQueryImageSwiper-pagination .swiper-pagination-bullet {
@@ -120,8 +120,9 @@ button{
     @apply flex flex-col content-between gap-10 mb-5
 }
 
-.pop-query__card_link img{
-    @apply transition
+.pop-query__card_link svg{
+    transition: .1s;
+    @apply relative right-0 top-0 transition-all
 }
 
 .pop-query__card_link .before-price{
@@ -129,8 +130,14 @@ button{
 }
 
 
-.pop-query__card_link:hover img{
-    @apply rotate-45 transition
+.pop-query__card_link:hover svg{
+    transition: 0.1s;
+    @apply rotate-45 transition-all
+}
+
+.pop-query__card_link:active svg{
+    transition: .1s;
+    @apply transition-all relative right-[-30px] opacity-0
 }
 
 .before-price::before{
@@ -180,12 +187,16 @@ button{
     .card__link img{
         max-width: 46px;
         max-height: 46px;
-        @apply transition
+        @apply transition-all 
     }
     
     .card__link:hover img, .card__link:focus img{
-        @apply rotate-45 transition
+        @apply rotate-45 transition-all
     }
+
+    /* .card__link:active img{
+        @apply 
+    } */
     
     .card__link_text {
         @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 
@@ -285,10 +296,11 @@ button{
     .shipments__link:active path{
         fill: rgba(255, 255, 255, 0.400);  
         transition: 0.2s;
+        @apply opacity-0
     }
     
     .shipments__link:active svg{
-        right: -60px;
+        right: -160px;
         transition: .2s;
     }    
 } 
@@ -319,11 +331,11 @@ button{
 /* MODAL COLLBACK */
 @layer components {
     .modal-collback {
-        @apply hidden overflow-hidden flex-col gap-8 lg:gap-14 fixed top-0 lg:top-[2%] left-0 lg:left-[13%] w-full lg:w-[75%] h-full lg:h-[95%] bg-white border-orange-400 border-[10px] z-10
+        @apply hidden overflow-hidden flex-col gap-8 lg:gap-14 fixed top-0 left-0 w-full h-full bg-white border-orange-400 border-[10px] z-10
     }
 
     .collback-form {
-        @apply flex flex-col gap-10
+        @apply flex flex-col gap-14
     }
 
     .collback-form__group {
@@ -331,11 +343,15 @@ button{
     }
 
     .collback-form__label {
-        @apply absolute top-2 left-3 z-[-1] text-[#7B7F8B] font-light text-xl px-1 py-0 bg-white transition-all
+        @apply absolute top-4 left-3 z-[-1] text-[#7B7F8B] font-light text-xl px-1 py-0 bg-white transition-all
     }
 
     .collback-form__input {
-        @apply bg-transparent w-full border-[#223062] border-[3px] transition 
+        @apply bg-transparent w-full h-16 border-[#223062] border-[3px] transition 
+    }
+
+    .collback-form__input_about {
+        @apply bg-transparent w-full h-44 border-[#223062] border-[3px] transition
     }
 
     .collback-form__input:hover,

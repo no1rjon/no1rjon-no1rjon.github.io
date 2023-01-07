@@ -780,9 +780,7 @@ select {
 .card__link img{
   max-width: 46px;
   max-height: 46px;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
 }
@@ -790,12 +788,14 @@ select {
 .card__link:hover img, .card__link:focus img {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+/* .card__link:active img{
+        @apply 
+    } */
 
 .card__link_text {
   height: 20%;
@@ -1026,10 +1026,11 @@ select {
 .shipments__link:active path{
   fill: rgba(255, 255, 255, 0.400);
   transition: 0.2s;
+  opacity: 0
 }
 
 .shipments__link:active svg{
-  right: -60px;
+  right: -160px;
   transition: .2s;
 }
 
@@ -1096,10 +1097,6 @@ select {
 
 @media (min-width: 1024px) {
   .modal-collback {
-    top: 2%;
-    left: 13%;
-    height: 95%;
-    width: 75%;
     gap: 3.5rem;
   }
 }
@@ -1107,7 +1104,7 @@ select {
 .collback-form {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
 .collback-form__group {
@@ -1116,7 +1113,7 @@ select {
 
 .collback-form__label {
   position: absolute;
-  top: 0.5rem;
+  top: 1rem;
   left: 0.75rem;
   z-index: -1;
   --tw-bg-opacity: 1;
@@ -1136,6 +1133,21 @@ select {
 }
 
 .collback-form__input {
+  height: 4rem;
+  width: 100%;
+  border-width: 3px;
+  --tw-border-opacity: 1;
+  border-color: rgb(34 48 98 / var(--tw-border-opacity));
+  background-color: transparent;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.collback-form__input_about {
+  height: 11rem;
   width: 100%;
   border-width: 3px;
   --tw-border-opacity: 1;
@@ -1259,6 +1271,14 @@ select {
   top: 1rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .bottom-2 {
   bottom: 0.5rem;
 }
@@ -1338,10 +1358,6 @@ select {
 
 .mb-16 {
   margin-bottom: 4rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
 }
 
 .box-border {
@@ -1648,6 +1664,10 @@ select {
   fill: #223062;
 }
 
+.fill-\[\#3C4155\] {
+  fill: #3C4155;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1903,7 +1923,7 @@ button{
 }
 
 .button-animation:hover:before,:focus:before {
-  width: 120%;
+  width: 130%;
 }
 
 .button-animation:active::before {
@@ -2003,11 +2023,12 @@ button{
 
 .popQuerySwiper {
   position: relative;
+  width: 2800px;
   overflow: hidden;
 }
 
 .popQuerySwiper .swiper-slide {
-  width: 900px;
+  width: 100%;
 }
 
 .popQueryImageSwiper-pagination .swiper-pagination-bullet {
@@ -2046,12 +2067,14 @@ button{
   gap: 2.5rem;
 }
 
-.pop-query__card_link img {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+.pop-query__card_link svg{
+  transition: .1s;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 150ms
 }
 
 .pop-query__card_link .before-price {
@@ -2061,14 +2084,23 @@ button{
   font-family: 'Overpass', sans-serif;
 }
 
-.pop-query__card_link:hover img {
+.pop-query__card_link:hover svg{
+  transition: 0.1s;
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 150ms
+}
+
+.pop-query__card_link:active svg{
+  transition: .1s;
+  position: relative;
+  right: -30px;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
 }
 
 .before-price::before{
@@ -2104,6 +2136,10 @@ button{
 }
 
 @media (min-width: 640px) {
+  .sm\:right-10 {
+    right: 2.5rem;
+  }
+
   .sm\:pl-16 {
     padding-left: 4rem;
   }
@@ -2118,6 +2154,18 @@ button{
     top: 4rem;
   }
 
+  .lg\:right-44 {
+    right: 11rem;
+  }
+
+  .lg\:top-20 {
+    top: 5rem;
+  }
+
+  .lg\:right-\[45\%\] {
+    right: 45%;
+  }
+
   .lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -2128,6 +2176,10 @@ button{
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:ml-44 {
+    margin-left: 11rem;
   }
 
   .lg\:block {
@@ -2146,16 +2198,16 @@ button{
     display: none;
   }
 
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .lg\:w-\[100\%\] {
     width: 100%;
   }
 
   .lg\:w-\[75\%\] {
     width: 75%;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:max-w-6xl {
@@ -2221,6 +2273,11 @@ button{
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .lg\:pb-0 {
