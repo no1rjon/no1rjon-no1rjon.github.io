@@ -1340,10 +1340,6 @@ select {
   margin-bottom: 4rem;
 }
 
-.ml-32 {
-  margin-left: 8rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -1634,6 +1630,10 @@ select {
 
 .bg-\[url\(\'\.\.\/img\/background\/back_footer\.png\'\)\] {
   background-image: url('../img/background/back_footer.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/background\/Group\.png\'\)\] {
+  background-image: url('../img/background/Group.png');
 }
 
 .bg-bottom {
@@ -2036,35 +2036,6 @@ button{
   border-radius: 0;
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity))
-}
-
-.pop-query {
-  margin-left: 0px;
-  display: flex;
-  flex-wrap: nowrap;
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-  overflow: visible;
-}
-
-@media (min-width: 1024px) {
-  .pop-query {
-    margin-left: 9rem;
-  }
-}
-
-.pop-query__card {
-  display: flex;
-  max-width: 100%;
-  flex-shrink: 0;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .pop-query__card {
-    max-width: 45%;
-  }
 }
 
 .pop-query__card_link {

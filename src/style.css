@@ -114,14 +114,7 @@ button{
     @apply bg-orange-400
 }
 
-
-.pop-query {
-    @apply flex flex-nowrap gap-x-16 ml-0 lg:ml-36 overflow-visible
-}
-    
-.pop-query__card {
-    @apply flex flex-col gap-8 shrink-0 max-w-[100%] lg:max-w-[45%]
-}
+   
 
 .pop-query__card_link {
     @apply flex flex-col content-between gap-10 mb-5

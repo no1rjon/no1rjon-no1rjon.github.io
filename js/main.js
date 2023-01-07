@@ -50,9 +50,8 @@ new Swiper('.popQuerySwiper', {
     prevEl: '.popQuerySwiper-button-prev',
   },
 
-  loop: true,
-  slidesPerView: 2.4,
-  spaceBetween: 60,
+  slidesPerView: 2.3,
+  spaceBetween: 30,
 });
 
 new Swiper('.popQueryImageSwiper', {
