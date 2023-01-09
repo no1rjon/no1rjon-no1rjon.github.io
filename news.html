@@ -10,14 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/style.css">
-    <link
-        rel="stylesheet"
-        href="public/swiper-bundle.min.css"
-    />    
+    <link rel="stylesheet" href="public/style.css">   
     <title>Garant Auto</title>
 </head>
-<body class="bg-first bg-[url('../img/background/group.png')]">
+<body class="bg-first bg-[url('../img/background/Group.png')]">
 
     <!-- header -->
     <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
@@ -144,20 +140,59 @@
         </div>
     </header>
 
-    <!-- main -->
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
-        <section class="mb-24 ">
-            <h2 class="font-overpass font-bold text-3xl ml-0 lg:ml-28 mb-20">Связаться с нами</h2>
-            <div class="flex flex-col ml-0 lg:ml-28 gap-8">
-                <a class="text-[#005F9E] font-overpass font-bold text-3xl " href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
-                <a class="text-[#005F9E] font-overpass font-bold text-3xl " href="tel:+74959899570">8 (495) 989-95-70</a>
+
+        <ul class="pl-0 lg:pl-36 text-sm text-[#111831] font-light flex gap-2 pb-4">
+            <li><a href="index.html">Главная</a></li>
+            <span>&gt;</span>
+            <li><a href="#">Новости</a></li>
+        </ul>
+
+        <section class="mt-2">
+            <h2 class="section-title">Новости</h2>
+            <div class="grid grid-cols-4 mt-24 gap-y-2 lg:gap-x-20 lg:gap-y-14">
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>АО «КАЗ» представляет новый проект</h3>
+                        <span>22.01.2022</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Высотныйколенчато-телескопический автогидроподъемник</p>
+                        <img src="img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>Мусоровозный агрегат eCollect</h3>
+                        <span>01.08.2021</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Теперь новаторские разработки британцев перевоплотились в семейство eRCV</p>
+                        <img src="img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>Кузовостроители обращают взор на азиатские машины</h3>
+                        <span>08.12.2022</span>
+                    </div>
+                    <a href="#" class="block-news__link">
+                        <p>Заводы-«бодибилдеры» всё активнее используют шасси  европейских производителей</p>
+                        <img src="img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
+                <div class="block-news">
+                    <div class="block-news__title">
+                        <h3>GarantAuto сделали лучший сайт в отрасли</h3>
+                        <span>01.04.2021</span>
+                    </div>
+                    <a href="#" class="block-news__link ">
+                        <p>Кто бы сомневался ведь его Кирилл верстал</p>
+                        <img src="img/icon/arrow45_orange.svg">
+                    </a>
+                </div>
             </div>
-        </section>
-        <section>
-            <h2 class="font-overpass font-bold text-3xl ml-0 lg:ml-28 mb-10">Где нас найти</h2>
-            <iframe class="border-[10px] border-orange-400 w-full h-[600px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19951.8850327508!2d59.75994008406382!3d58.28907628912372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43eaf9a5efa736a3%3A0x3c8458137be55fae!2z0J_QsNGA0Log0LrRg9C70YzRgtGD0YDRiw!5e0!3m2!1sru!2sru!4v1672292514203!5m2!1sru!2sru"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        </section>      
     </main>
 
     <!-- footer -->
@@ -194,10 +229,8 @@
             </div>
         </section>
     </footer>
-    
-    <script src="js/swiper-bundle.min.js"></script>
+
     <script src="js/modal.js" type="module"></script>
-    <script src="js/main.js"></script>
     <script src="js/file-group.js"></script>
     
 </body>

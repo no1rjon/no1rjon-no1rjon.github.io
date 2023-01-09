@@ -69,6 +69,10 @@ button{
     @apply p-0 border-[10px] border-[#FF9B00] max-w-[100%] max-h-[100%] overflow-hidden
 }
 
+.swiper-button-disabled svg{
+    @apply opacity-50 hover:fill-black cursor-default
+}
+
 .gallerySwiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
     @apply bg-gray-400 hover:bg-orange-400 active:bg-orange-400 shrink-0 h-[4px] w-[8px] lg:h-[10px] lg:w-[30px]
@@ -97,7 +101,7 @@ button{
 /* POP QUERY SWIPER */
 
 .popQuerySwiper {
-    @apply w-[2800px] overflow-hidden relative
+    @apply w-[2800px] overflow-hidden
 }
 
 .popQuerySwiper .swiper-slide {
@@ -126,7 +130,7 @@ button{
 }
 
 .pop-query__card_link .before-price{
-    @apply text-3xl font-light font-overpass
+    @apply text-xl lg:text-3xl font-light font-overpass
 }
 
 
@@ -142,7 +146,7 @@ button{
 
 .before-price::before{
     content: "от";
-    @apply text-xl font-light pr-1
+    @apply text-base lg:text-xl font-light pr-1
 }
 
 
@@ -155,12 +159,20 @@ button{
     }
     
     .nav a{
-        @apply hover:text-gray-600
+        @apply hover:text-blue-900
     }
     
     .nav li + li::before{
         content: '';
         @apply border-l-4 px-9
+    }
+}
+
+/* logo */
+
+@layer components {
+    .logo-link:hover svg {
+        @apply fill-[#3e4f8d] transition-all duration-200
     }
 }
 
@@ -303,7 +315,29 @@ button{
         right: -160px;
         transition: .2s;
     }    
-} 
+}
+
+/* shipment-post */
+
+@layer components {
+    .shipment-post {
+        @apply relative max-w-full max-h-fit lg:w-[500px] lg:h-[350px] overflow-hidden
+    }
+
+    .shipment-post__article {
+        @apply bg-orange-500 opacity-0 h-full w-full absolute inset-0 flex flex-col p-4 transition-all duration-500 right-0 -top-full
+    }
+
+    .shipment-post > img{
+        @apply w-full h-full
+    }
+
+    .shipment-post:hover .shipment-post__article,
+    .shipment-post:focus .shipment-post__article{
+        @apply inset-0 opacity-80 transition-all duration-500
+    }
+
+}
 
 /* MODAL MENU */
 @layer components {
@@ -335,7 +369,7 @@ button{
     }
 
     .collback-form {
-        @apply flex flex-col gap-14
+        @apply flex flex-col gap-10
     }
 
     .collback-form__group {

@@ -1,5 +1,12 @@
 "use strict"
 
+let partnerSwiperAdaptivCountSlides = 1;
+if($(window).width() >= 1024){
+  partnerSwiperAdaptivCountSlides = 2.3;
+} else {
+  partnerSwiperAdaptivCountSlides = 1.3;
+}
+
 new Swiper('.gallerySwiper', {
     
   navigation: {
@@ -12,8 +19,6 @@ new Swiper('.gallerySwiper', {
     type: 'bullets',
     clickable: true,
   },
-
-  loop: true,
 
   simulateTouch: true,
   touchRatio: 1,
@@ -50,7 +55,7 @@ new Swiper('.popQuerySwiper', {
     prevEl: '.popQuerySwiper-button-prev',
   },
 
-  slidesPerView: 2.3,
+  slidesPerView: partnerSwiperAdaptivCountSlides,
   spaceBetween: 30,
 });
 
