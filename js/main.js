@@ -1,11 +1,12 @@
 "use strict"
 
-let partnerSwiperAdaptivCountSlides = 1;
-if($(window).width() >= 1024){
-  partnerSwiperAdaptivCountSlides = 2.3;
-} else {
-  partnerSwiperAdaptivCountSlides = 1.3;
-}
+// let partnerSwiperAdaptivCountSlides = 2.3;
+// const mediaQuery = window.matchMedia('(min-width: 1024px)')
+// if (mediaQuery.matches) {
+//   partnerSwiperAdaptivCountSlides = 2.3;
+// } else {
+//   partnerSwiperAdaptivCountSlides = 2.1;
+// };
 
 new Swiper('.gallerySwiper', {
     
@@ -55,8 +56,8 @@ new Swiper('.popQuerySwiper', {
     prevEl: '.popQuerySwiper-button-prev',
   },
 
-  slidesPerView: partnerSwiperAdaptivCountSlides,
-  spaceBetween: 30,
+  slidesPerView: "auto",
+  spaceBetween: 20,
 });
 
 new Swiper('.popQueryImageSwiper', {

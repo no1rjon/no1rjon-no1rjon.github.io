@@ -1517,34 +1517,6 @@ select {
   width: 50px;
 }
 
-.w-\[280px\] {
-  width: 280px;
-}
-
-.w-\[210px\] {
-  width: 210px;
-}
-
-.w-\[220px\] {
-  width: 220px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
-.w-\[170px\] {
-  width: 170px;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -1583,6 +1555,10 @@ select {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-4 {
@@ -1690,10 +1666,6 @@ select {
   align-self: center;
 }
 
-.justify-self-end {
-  justify-self: end;
-}
-
 .justify-self-center {
   justify-self: center;
 }
@@ -1778,6 +1750,10 @@ select {
 
 .fill-\[\#3C4155\] {
   fill: #3C4155;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-1 {
@@ -2157,12 +2133,23 @@ button{
 /* POP QUERY SWIPER */
 
 .popQuerySwiper {
-  width: 2800px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .popQuerySwiper .swiper-slide {
-  width: 100%;
+  width: 240px;
+}
+
+@media (min-width: 640px) {
+  .popQuerySwiper .swiper-slide {
+    width: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .popQuerySwiper .swiper-slide {
+    width: 600px;
+  }
 }
 
 .popQueryImageSwiper-pagination .swiper-pagination-bullet {
@@ -2212,7 +2199,7 @@ button{
 }
 
 .pop-query__card_link .before-price {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 300;
   font-family: 'Overpass', sans-serif;
@@ -2363,38 +2350,6 @@ button{
     width: 75%;
   }
 
-  .lg\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .lg\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .lg\:w-\[420px\] {
-    width: 420px;
-  }
-
-  .lg\:w-\[430px\] {
-    width: 430px;
-  }
-
-  .lg\:w-\[460px\] {
-    width: 460px;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .lg\:w-\[360px\] {
-    width: 360px;
-  }
-
-  .lg\:w-\[380px\] {
-    width: 380px;
-  }
-
   .lg\:max-w-6xl {
     max-width: 72rem;
   }
@@ -2482,10 +2437,6 @@ button{
 @media (min-width: 1280px) {
   .xl\:w-\[60\%\] {
     width: 60%;
-  }
-
-  .xl\:w-\[460px\] {
-    width: 460px;
   }
 
   .xl\:flex-row {

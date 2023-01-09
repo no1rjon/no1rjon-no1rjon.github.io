@@ -101,11 +101,13 @@ button{
 /* POP QUERY SWIPER */
 
 .popQuerySwiper {
-    @apply w-[2800px] overflow-hidden
+    @apply overflow-visible
 }
 
+
+
 .popQuerySwiper .swiper-slide {
-    @apply w-full
+    @apply w-[240px] sm:w-[480px] lg:w-[600px]
 }
 
 .popQueryImageSwiper-pagination .swiper-pagination-bullet {
@@ -116,9 +118,7 @@ button{
 .popQueryImageSwiper-pagination .swiper-pagination-bullet-active {
     border-radius: 0;
     @apply bg-orange-400
-}
-
-   
+}  
 
 .pop-query__card_link {
     @apply flex flex-col content-between gap-10 mb-5
@@ -130,7 +130,7 @@ button{
 }
 
 .pop-query__card_link .before-price{
-    @apply text-xl lg:text-3xl font-light font-overpass
+    @apply text-lg lg:text-3xl font-light font-overpass
 }
 
 
