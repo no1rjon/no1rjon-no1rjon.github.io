@@ -199,16 +199,16 @@ button{
     .card__link img{
         max-width: 46px;
         max-height: 46px;
-        @apply transition-all 
+        @apply relative right-0 transition-all duration-200
     }
     
     .card__link:hover img, .card__link:focus img{
-        @apply rotate-45 transition-all
+        @apply rotate-45 transition-all duration-200
     }
 
-    /* .card__link:active img{
-        @apply 
-    } */
+    .card__link:active img{
+        @apply transition-all duration-200 opacity-0 -right-10
+    }
     
     .card__link_text {
         @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 
@@ -250,12 +250,16 @@ button{
     }
     
     .block-news__link img{
-        @apply transition max-w-[24px] max-h-[24px] lg:max-h-max lg:max-w-max
+        @apply transition-all max-w-[24px] max-h-[24px] lg:max-h-max lg:max-w-max relative right-0 duration-200
     }
     
     .block-news__link:hover img{
-        @apply rotate-45 transition
-    }    
+        @apply rotate-45 transition-all duration-200
+    }
+    
+    .block-news__link:active img{
+        @apply transition-all -right-10 opacity-0 duration-200
+    }
 }
 
 /* shipments */
@@ -436,4 +440,14 @@ button{
 
 .modal-collback_open {
     @apply flex
+}
+
+
+/* about-vehicle */
+
+@layer components {
+
+    .about-vehicle {
+        @apply py-14 border-[#FF9B00]
+    }
 }
